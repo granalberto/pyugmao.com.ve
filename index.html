@@ -41,8 +41,8 @@
 						<ul>
 							<li class="current"><a href="index.html">Portada</a></li>
 							<li><a href="servicios.html">Servicios</a></li>
-							<li><a href="rs.html">Responsabilidad Civil</a></li>
 							<li><a href="tarifas.html">Tarifas</a></li>
+                            <li><a href="rs.html">Responsabilidad Civil</a></li>
 							<li><a href="contacto.html">Contacto</a></li>
 						</ul>
 					</nav>
@@ -116,25 +116,37 @@
 
 							<!-- Contact Form -->
 								<section>
-									<form method="post" action="#">
-										<div class="row 50%">
-											<div class="6u">
-												<input type="text" name="name" id="contact-name" placeholder="Name" />
-											</div>
-											<div class="6u">
-												<input type="text" name="email" id="contact-email" placeholder="Email" />
-											</div>
-										</div>
+									<form method="post" action="http://www.pyugmao.com.ve/contact.php">
+                                        <div class="row 50%">
+                                            <div class="6u">
+                                                <input type="text" name="nombre" placeholder="Nombre" />
+                                            </div>
+                                            <div class="6u">
+                                                <input type="text" name="apellido" placeholder="Apellido" />
+                                            </div>
+                                        </div>
+                                        <div class="row 50%">
+                                            <div class="6u">
+                                                <input type="text" name="ci" placeholder="Correo" />
+                                            </div>
+                                            <div class="6u">
+                                                <input type="text" name="tlf" placeholder="Teléfono" />
+                                            </div>
+                                        </div>
 										<div class="row 50%">
 											<div class="12u">
-												<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+												<textarea name="puesto" placeholder="Mensaje" rows="4"></textarea>
 											</div>
 										</div>
 										<div class="row">
 											<div class="12u">
 												<ul class="actions">
-													<li><input type="submit" class="style1" value="Send" /></li>
-													<li><input type="reset" class="style2" value="Reset" /></li>
+													<li>
+                                                        <input name="borrar" type="reset" class="style2" value="Borrar" />
+                                                    </li>
+                                                    <li>
+                                                        <input name="enviar" type="submit" class="style1" value="Enviar" />
+                                                    </li>
 												</ul>
 											</div>
 										</div>
@@ -194,7 +206,7 @@
 				</div>
 				<div id="copyright">
 					<ul>
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; PYUGMAO</li><li>Diseño: <a href="http://huntingbears.com.ve/">HuntingBears</a>, basado en HTML5UP.</li>
 					</ul>
 				</div>
 			</div>
