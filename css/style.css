@@ -369,7 +369,7 @@
 			input[type="reset"].style1,
 			.button.style1
 			{
-				background: #e97770 url('images/overlay.png');
+				background: #d94e3f url('images/overlay.png');
 				color: #fff;
 			}
 
@@ -512,7 +512,7 @@
 
 			.feature-list h3
 			{
-				color: #e97770 !important;
+				color: #d94e3f !important;
 			}
 
 				.feature-list h3:before
@@ -599,14 +599,14 @@
 
 		.wrapper.style1
 		{
-			background: #e97770 url('images/overlay.png');
+			background: #d94e3f url('images/overlay.png');
 			color: #eee;
 			color: rgba(255,255,255,0.75);
 		}
 
 			.wrapper.style1 .title
 			{
-				background: #e97770 url('images/overlay.png');
+				background: #d94e3f url('images/overlay.png');
 				color: #fff;
 			}
 
@@ -848,7 +848,7 @@
 
 			#highlights .highlight h3
 			{
-				color: #e97770;
+				color: #d94e3f;
 			}
 
 /*********************************************************************************/
@@ -878,3 +878,58 @@
 			{
 				color: #fff;
 			}
+
+#newrcv_doc_field > label {
+	float: left;
+	width: 10%;
+	margin: 0;
+	padding: 0;
+	height: 30px;
+	line-height: 30px;
+}
+
+#newrcv_doc_field > input {
+	float: left;
+	width: 10%;
+	margin: 5px 0;
+	padding: 0;
+	height: 20px;
+	line-height: 30px;
+}
+
+#newrcv_fname_label,
+#newrcv_fname_field,
+#newrcv_lname_label,
+#newrcv_lname_field,
+#newrcv_doc_label,
+#newrcv_doc_field,
+#newrcv_ci_label,
+#newrcv_ci_field,
+#newrcv_tlf_label,
+#newrcv_tlf_field,
+#newrcv_placa_label,
+#newrcv_placa_field,
+#newrcv_serial_label,
+#newrcv_serial_field,
+#newrcv_marca_label,
+#newrcv_marca_field,
+#newrcv_modelo_label,
+#newrcv_modelo_field,
+#newrcv_year_label,
+#newrcv_year_field,
+#newrcv_color_label,
+#newrcv_color_field,
+#newrcv_clase_label,
+#newrcv_clase_field,
+#newrcv_tipo_label,
+#newrcv_tipo_field,
+#newrcv_uso_label,
+#newrcv_uso_field,
+#newrcv_puestos_label,
+#newrcv_puestos_field,
+#newrcv_user_label,
+#newrcv_user_field,
+#newrcv_pass_label,
+#newrcv_pass_field {
+	padding: 15px 0 0 25px !important;
+}

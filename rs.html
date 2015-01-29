@@ -488,14 +488,14 @@
                 // fname: standard text, hidden, password, or textarea box
                 var fname = form.elements['fname'].value;
                 if (fname == null || fname === "") {
-                    alertstr += '- Invalid entry for the "Primer Nombre" field\n';
+                    alertstr += '- Entrada inválida para el campo "Primer Nombre".\n';
                     invalid++;
                     invalid_fields.push('fname');
                 }
                 // lname: standard text, hidden, password, or textarea box
                 var lname = form.elements['lname'].value;
                 if (lname == null || lname === "") {
-                    alertstr += '- Invalid entry for the "Primer Apellido" field\n';
+                    alertstr += '- Entrada inválida para el campo "Primer Apellido".\n';
                     invalid++;
                     invalid_fields.push('lname');
                 }
@@ -507,70 +507,70 @@
                         doc = form.elements['doc'][loop].value;
                         selected_doc++;
                         if (doc == null || doc === "") {
-                            alertstr += '- Choose one of the "Tipo Documento" options\n';
+                            alertstr += '- No se ha escogido una opción para "Tipo Documento".\n';
                             invalid++;
                             invalid_fields.push('doc');
                         }
                     } // if
                 } // for doc
                 if (! selected_doc) {
-                    alertstr += '- Choose one of the "Tipo Documento" options\n';
+                    alertstr += '- No se ha escogido una opción para" Tipo Documento".\n';
                     invalid++;
                 }
 
                 // ci: standard text, hidden, password, or textarea box
                 var ci = form.elements['ci'].value;
                 if (ci == null || ! ci.match(/^\d{7,9}$/)) {
-                    alertstr += '- Invalid entry for the "CI/RIF" field\n';
+                    alertstr += '- Entrada inválida para el campo "CI/RIF".\n';
                     invalid++;
                     invalid_fields.push('ci');
                 }
                 // tlf: standard text, hidden, password, or textarea box
                 var tlf = form.elements['tlf'].value;
                 if (tlf == null || ! tlf.match(/^0[24]\d{9}$/)) {
-                    alertstr += '- Invalid entry for the "Tel�fono" field\n';
+                    alertstr += '- Entrada inválida para el campo "Teléfono".\n';
                     invalid++;
                     invalid_fields.push('tlf');
                 }
                 // placa: standard text, hidden, password, or textarea box
                 var placa = form.elements['placa'].value;
                 if (placa == null || placa === "") {
-                    alertstr += '- Invalid entry for the "Placa" field\n';
+                    alertstr += '- Entrada inválida para el campo "Placa".\n';
                     invalid++;
                     invalid_fields.push('placa');
                 }
                 // serial: standard text, hidden, password, or textarea box
                 var serial = form.elements['serial'].value;
                 if (serial == null || ! serial.match(/^\w+$/)) {
-                    alertstr += '- Invalid entry for the "Serial" field\n';
+                    alertstr += '- Entrada inválida para el campo "Serial".\n';
                     invalid++;
                     invalid_fields.push('serial');
                 }
                 // marca: standard text, hidden, password, or textarea box
                 var marca = form.elements['marca'].value;
                 if (marca == null || marca === "") {
-                    alertstr += '- Invalid entry for the "Marca" field\n';
+                    alertstr += '- Entrada inválida para el campo "Marca".\n';
                     invalid++;
                     invalid_fields.push('marca');
                 }
                 // modelo: standard text, hidden, password, or textarea box
                 var modelo = form.elements['modelo'].value;
                 if (modelo == null || modelo === "") {
-                    alertstr += '- Invalid entry for the "Modelo" field\n';
+                    alertstr += '- Entrada inválida para el campo "Modelo".\n';
                     invalid++;
                     invalid_fields.push('modelo');
                 }
                 // year: standard text, hidden, password, or textarea box
                 var year = form.elements['year'].value;
                 if (year == null || ! year.match(/^\d{4}$/)) {
-                    alertstr += '- Invalid entry for the "Ano" field\n';
+                    alertstr += '- Entrada inválida para el campo "Año".\n';
                     invalid++;
                     invalid_fields.push('year');
                 }
                 // color: standard text, hidden, password, or textarea box
                 var color = form.elements['color'].value;
                 if (color == null || color === "") {
-                    alertstr += '- Invalid entry for the "Color" field\n';
+                    alertstr += '- Entrada inválida para el campo "Color".\n';
                     invalid++;
                     invalid_fields.push('color');
                 }
@@ -582,14 +582,14 @@
                         clase = form.elements['clase'].options[loop].value;
                         selected_clase++;
                         if (clase == null || clase === "") {
-                            alertstr += '- Select an option from the "Clase" list\n';
+                            alertstr += '- Selecciona una opción de la lista "Clase".\n';
                             invalid++;
                             invalid_fields.push('clase');
                         }
                     } // if
                 } // for clase
                 if (! selected_clase) {
-                    alertstr += '- Select an option from the "Clase" list\n';
+                    alertstr += '- Selecciona una opción de la lista "Clase".\n';
                     invalid++;
                 }
 
@@ -601,14 +601,14 @@
                         tipo = form.elements['tipo'].options[loop].value;
                         selected_tipo++;
                         if (tipo == null || tipo === "") {
-                            alertstr += '- Select an option from the "Tipo" list\n';
+                            alertstr += '- Selecciona una opción de la lista "Tipo".\n';
                             invalid++;
                             invalid_fields.push('tipo');
                         }
                     } // if
                 } // for tipo
                 if (! selected_tipo) {
-                    alertstr += '- Select an option from the "Tipo" list\n';
+                    alertstr += '- Selecciona una opción de la lista "Tipo".\n';
                     invalid++;
                 }
 
@@ -620,42 +620,42 @@
                         uso = form.elements['uso'].options[loop].value;
                         selected_uso++;
                         if (uso == null || uso === "") {
-                            alertstr += '- Select an option from the "Uso" list\n';
+                            alertstr += '- Selecciona una opción de la lista "Uso".\n';
                             invalid++;
                             invalid_fields.push('uso');
                         }
                     } // if
                 } // for uso
                 if (! selected_uso) {
-                    alertstr += '- Select an option from the "Uso" list\n';
+                    alertstr += '- Selecciona una opción de la lista "Uso".\n';
                     invalid++;
                 }
 
                 // puestos: standard text, hidden, password, or textarea box
                 var puestos = form.elements['puestos'].value;
                 if (puestos == null || ! puestos.match(/^-?\s*[0-9]+$/)) {
-                    alertstr += '- Invalid entry for the "Nro. Puestos" field\n';
+                    alertstr += '- Entrada inválida para el campo "Nro. Puestos".\n';
                     invalid++;
                     invalid_fields.push('puestos');
                 }
                 // user: standard text, hidden, password, or textarea box
                 var user = form.elements['user'].value;
                 if (user == null || user === "") {
-                    alertstr += '- Invalid entry for the "Usuario" field\n';
+                    alertstr += '- Entrada inválida para el campo "Usuario".\n';
                     invalid++;
                     invalid_fields.push('user');
                 }
                 // pass: standard text, hidden, password, or textarea box
                 var pass = form.elements['pass'].value;
                 if (pass == null || pass === "") {
-                    alertstr += '- Invalid entry for the "Contrasena" field\n';
+                    alertstr += '- Entrada inválida para el campo "Contrasena".\n';
                     invalid++;
                     invalid_fields.push('pass');
                 }
                 if (invalid > 0 || alertstr != '') {
-                    if (! invalid) invalid = 'The following';   // catch for programmer error
-                    alert(''+invalid+' error(s) were encountered with your submission:'+'\n\n'
-                            +alertstr+'\n'+'Please correct these fields and try again.');
+                    if (! invalid) invalid = 'Los siguientes';   // catch for programmer error
+                    alert(''+invalid+' errores fueron encontrados en el formulario:'+'\n\n'
+                            +alertstr+'\n'+'Por favor corrígelos y vuelve a intentarlo.');
                     return false;
                 }
                 return true;  // all checked ok
